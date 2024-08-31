@@ -22,7 +22,7 @@ public struct SketchView: ViewRepresentable {
     public init(
         _ sketch: Sketch,
         blendMode: RendererBase.BlendMode = .alphaBlend,
-        cameraConfig: CameraConfig = DefaultPerspectiveConfig(),
+        cameraConfig: CameraConfig = DefaultOrthographicConfig(),
         drawConfig: DrawConfig = DefaultDrawConfig()
     ) {
         self.drawProcess = sketch
